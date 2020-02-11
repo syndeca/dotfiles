@@ -1,0 +1,21 @@
+# Ignore IDE specific files
+.buildpath
+.project
+.settings
+*.sublime-workspace
+*.sublime-project
+.tm_properties
+*.tmproj
+.idea
+*.iml
+# Ignore system specific files
+.DS_Store
+# Thumbnails
+._*
+Thumbs.db
+.zeus.sock
+.svn
+custom_plan.rb
+zeus.json
+atlassian-ide-plugin.xml
+
