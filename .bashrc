@@ -151,5 +151,5 @@ if grep -q Microsoft /proc/version; then
 fi
 
 # Composer
-export PATH="$PATH:$HOME/.composer/vendor/bin"
+export PATH="$PATH:./vendor/bin"
 
