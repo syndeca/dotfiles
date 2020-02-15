@@ -150,3 +150,6 @@ if grep -q Microsoft /proc/version; then
   eval $(/mnt/c/Users/Chris/.ssh/weasel-pageant-1.4/weasel-pageant -r)
 fi
 
+# Composer
+export PATH="$PATH:$HOME/.composer/vendor/bin"
+
