@@ -122,10 +122,10 @@ function git_branch {
 
 if git --version &>/dev/null; then
   # PS1 Line to show current Git Branch in the Prompt
-  PS1='\[\e[38;5;241;48;5;235m\]\A\[\e[m\][\u@\H \[\e[38;5;33m\]\W\[\e[m\]] \[\e[38;5;40m\]$(git_branch)\[\e[m\]\$ '
+  PS1='[\u@$NICKNAME \[\e[38;5;33m\]\W\] \[\e[m\]$(git_branch)\[\e[m\]]\$ '
 else
   # Original PS1 Line
-  PS1='\[\e[38;5;241;48;5;235m\]\A\[\e[m\][\u@\H \[\e[38;5;33m\]\W\[\e[m\]] \$ '
+  PS1='[\u@$NICKNAME \[\e[38;5;33m\]\W\[\e[m\]] \$ '
 fi
 
 bind 'set completion-ignore-case on'
