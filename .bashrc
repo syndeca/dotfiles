@@ -120,7 +120,7 @@ function git_branch {
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1) /'
 }
 
-if git --version &>/dev/null; then
+if git status &>/dev/null; then
   # PS1 Line to show current Git Branch in the Prompt
   PS1='[\u@$NICKNAME \[\e[38;5;33m\]\W\] \[\e[m\]$(git_branch)\[\e[m\]]\$ '
 else
