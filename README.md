@@ -1,14 +1,13 @@
 # dotfiles
 dot em up
 
-### Install dotfiles
-
-    curl -Ls https://raw.githubusercontent.com/syndeca/dotfiles/master/cfg-install.sh | /bin/bash
-
-
 ### Set host nickname
 
     sudo sh -c 'echo "export NICKNAME=prod|stage|dev.vXXX.appname" > /etc/profile.d/prompt.sh'
+    
+### Install dotfiles
+
+    curl -Ls https://raw.githubusercontent.com/syndeca/dotfiles/master/cfg-install.sh | /bin/bash && source ~/.bashrc
     
 
 ### Thanks
