@@ -1,12 +1,6 @@
-[user]
-  email = kovey.1@osu.edu
-  name = Chris Kovey
 [core]
-	autocrlf = false
-  fileMode = false
   editor = nano
-  excludesfile = /home/chris/.gitignore_global
-  safecrlf = false
+  excludesfile = ~/.gitignore_global
 [color]
   branch = auto
   diff = auto
